@@ -1,7 +1,6 @@
 <template>
   <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#" id="home-button">Home</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -68,8 +67,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#home-button {
-  font-size: 2rem;
-  color: red;
-}
 </style>
