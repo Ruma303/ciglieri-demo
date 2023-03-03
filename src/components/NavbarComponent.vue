@@ -12,8 +12,8 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">I Comuni</a></li>
-            <li><a class="dropdown-item" href="https://www.comune.anzio.roma.it/">Anzio</a></li>
             <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="https://www.comune.anzio.roma.it/">Anzio</a></li>
             <li><a class="dropdown-item" href="https://www.comune.nettuno.roma.it/">Nettuno</a></li>
           </ul>
         </li>
