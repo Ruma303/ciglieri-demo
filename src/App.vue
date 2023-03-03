@@ -2,19 +2,18 @@
   <div class="app-container-external">
     <div class="app-container-internal container-fluid px-0">
       <HeaderComponent />
-      <HomePage />
-      <!--<router-view/>-->
+      <MainView />
     </div>
   </div>
 </template>
 
 <script>
-import HeaderComponent from './components/HeaderComponent.vue';
-import HomePage from './views/HomePage.vue';
-export default { 
+import HeaderComponent from './components/header/HeaderComponent.vue';
+import MainView from './views/MainView.vue';
+export default {
     components: {
     HeaderComponent,
-    HomePage
+    MainView
   }
 }
 
