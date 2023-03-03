@@ -2,9 +2,6 @@
     <header class="header-container d-flex fixed-top flex-column">
         <div class="header-social d-flex align-items-center justify-content-center gap-4">
             <a href="#">La nostra pagina Facebook</a>
-            <a href="#">Linkedin</a>
-            <a href="#">Instagram</a>
-            <a href="#">Youtube</a>
         </div>
         <img src="../assets/banner.jpg" alt="" class="header-banner">
         <div class="header-inside container d-flex align-items-center justify-content-between px-0">
@@ -53,4 +50,4 @@ export default {
     }
 }
 }
-</style>    
+</style>
