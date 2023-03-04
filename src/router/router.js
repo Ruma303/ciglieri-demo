@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import MainView from '../views/MainView.vue'
 import Comuni from '../components/homepage/ComuniPage.vue'
 const routes = [
-  { //*HOMEPAGE
+  { //*HOMEPAGE con le news e gli avvisi
     path: '/',
     name: 'Home',
     component: MainView
