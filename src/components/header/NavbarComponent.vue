@@ -6,6 +6,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarScroll">
       <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll gap-2" style="--bs-scroll-height: 100px;">
+        <router-link to="/" class="navbar-brand">Home</router-link>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Il Distretto
@@ -13,8 +14,6 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">I Comuni</a></li>
             <li><a class="dropdown-item" href="#">Piano di Zona</a></li>
-            <!--<li><a class="dropdown-item" href="https://www.comune.anzio.roma.it/">Anzio</a></li>-->
-            <!--<li><a class="dropdown-item" href="https://www.comune.nettuno.roma.it/">Nettuno</a></li>-->
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -59,12 +58,10 @@
   </div>
 </nav>
 </template>
-
 <script>
 export default {
     name: 'Navbar'
 }
 </script>
-
 <style lang="scss" scoped>
 </style>
