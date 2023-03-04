@@ -27,6 +27,9 @@ export default {
     background-color: #20a5d6;
     width: 100vw;
     position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
     .header-social {
         background-color: #42b983;
         a {

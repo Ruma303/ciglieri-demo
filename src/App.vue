@@ -1,8 +1,8 @@
 <template>
   <div class="app-container-external">
     <div class="app-container-internal container-fluid px-0">
-      <HeaderComponent />
-      <MainView />
+      <HeaderComponent id="header-component"/>
+      <MainView id="main-component"/>
     </div>
   </div>
 </template>
@@ -44,6 +44,12 @@ a {
   width: 100vw;
   margin: 0;
   padding: 0;
+  //position: relative;
 }
-
+/* #header-component {
+  position: absolute;
+}
+#main-component {
+  position: absolute;
+} */
 </style>
