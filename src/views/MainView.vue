@@ -32,7 +32,6 @@ export default {
     position: relative;
 
     .news-container {
-        //max-width: 60%;
         margin: 0;
         left: 0;
         top: 0;

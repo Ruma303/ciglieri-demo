@@ -4,6 +4,7 @@
 
       <HeaderComponent id="header-component"/>
       <div id="main-view-div">
+        <!-- *Questo router-view sará il componente dinamico che mostrerá altre views -->
         <router-view id="main-component"/>
         <RightSideComponent id="rigthside-container" />
       </div>
@@ -68,8 +69,11 @@ a {
 
    #main-component {
       max-width: 80%;
+      width: 100%;
+      height:100;
       margin: 0;
       padding-left: 5rem;
+      padding-top: 2rem;
       left: 0;
       top: 0;
    }

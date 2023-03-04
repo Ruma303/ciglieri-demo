@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import MainView from '../views/MainView.vue'
-import Comuni from '../components/homepage/ComuniPage.vue'
 const routes = [
   { //*HOMEPAGE con le news e gli avvisi
     path: '/',
@@ -11,7 +10,12 @@ const routes = [
   { //*I Comuni
     path: '/comuni',
     name: 'Comuni',
-    component: Comuni
+    component: ()=> import(/*webpackChunkName: "comuni"*/ "@/views/ComuniPage.vue"),
+  },
+  { //*Piano di zona
+    path: '/piano-di-zona',
+   // name: 'Comuni',
+    //component: ()=> import(/*webpackChunkName: "comuni"*/ "@/views/ComuniPage.vue"),
   },
 ]
 const router = createRouter({

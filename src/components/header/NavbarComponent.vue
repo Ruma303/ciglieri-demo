@@ -12,8 +12,8 @@
             Il Distretto
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">I Comuni</a></li>
-            <li><a class="dropdown-item" href="#">Piano di Zona</a></li>
+            <li><router-link class="dropdown-item" to="/comuni">I Comuni</router-link></li>
+            <li><router-link class="dropdown-item" to="/piano-di-zona">Piano di Zona</router-link></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
