@@ -4,6 +4,7 @@ import MainView from '@/views/MainView.vue';
 import Comuni from '@/views/ComuniPage.vue';
 import Modulistica from '@/views/ModulisticaPage.vue';
 import Amministrazione from '@/views/AmministrazionePage.vue';
+import AlboPretorio from '@/views/AlboPretorioPage.vue';
 
 
 
@@ -33,8 +34,18 @@ const routes = [
     path: '/amministrazione-trasparente',
     name: 'Amministrazione',
     component: Amministrazione,
-  }
+  },
+  {
+    path: '/albo-pretorio',
+    name: 'AlboPretorio',
+    component: AlboPretorio,
+  },
 ]
+
+
+
+
+
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
