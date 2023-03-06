@@ -44,16 +44,10 @@
             <li><a class="dropdown-item" href="#">Altro link</a></li>
           </ul>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <li class="nav-item">
+          <router-link class="nav-link  text-dark" to="/amministrazione-trasparente" role="button" aria-expanded="false">
             <span class="text-collapse">Amministrazione Trasparente</span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Link</a></li>
-            <li><a class="dropdown-item" href="#">Altro link</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Altro link</a></li>
-          </ul>
+          </router-link>
         </li>
       </ul>
       <form class="d-flex" role="search">

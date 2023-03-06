@@ -1,30 +1,38 @@
 import { createRouter, createWebHistory } from 'vue-router'
+//$ Importazioni
 import MainView from '@/views/MainView.vue';
+import Comuni from '@/views/ComuniPage.vue';
 import Modulistica from '@/views/ModulisticaPage.vue';
+import Amministrazione from '@/views/AmministrazionePage.vue';
 
 
 
 const routes = [
-  { //*HOMEPAGE con le news e gli avvisi
+  {
     path: '/',
     name: 'Home',
     component: MainView
   },
   //TODO probabilmente dovrò cambiare queste rotte e fare /il-distretto/:sotto-rotte dinamiche es comuni, piano-di-zona... Al momento le faccio statiche
-  { //*I Comuni
+  {
     path: '/comuni',
     name: 'Comuni',
-    component: ()=> import(/*webpackChunkName: "comuni"*/ "@/views/ComuniPage.vue"),
+    component: Comuni,
   },
-  { //*Piano di zona
-    path: '/piano-di-zona',
-   // name: 'Comuni',
-    //component: ()=> import(/*webpackChunkName: "comuni"*/ "@/views/ComuniPage.vue"),
+  {
+    // path: '/piano-di-zona',
+    // name: 'Comuni',
+    // component: ()=> import(/*webpackChunkName: "comuni"*/ "@/views/ComuniPage.vue") //todo da creare,
   },
   {
     path: '/modulistica',
     name: 'Modulistica',
-    component: ()=> import(/*webpackChunkName: "modulistica"*/ "@/views/ModulisticaPage.vue"),
+    component: Modulistica,
+  },
+  {
+    path: '/amministrazione-trasparente',
+    name: 'Amministrazione',
+    component: Amministrazione,
   }
 ]
 const router = createRouter({
