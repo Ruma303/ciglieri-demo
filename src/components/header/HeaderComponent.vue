@@ -5,7 +5,7 @@
         </div>
         <img src="../../assets/banner.jpg" alt="" class="header-banner">
         <div class="header-inside container d-flex align-items-center justify-content-between px-0">
-            <img src="../../assets/logo.jpg" alt="" class="header-logo">
+            <img src="../../assets/logo.png" alt="" class="header-logo">
             <NavbarComponent />
         </div>
     </header>
@@ -24,7 +24,8 @@ export default {
 
 <style scoped lang="scss">
 .header-container {
-    background-color: #20a5d6;
+    background-color: #dedede;
+    //border-bottom: solid .1px #cccccc;
     width: 100vw;
     position: relative;
     top: 0;
@@ -39,7 +40,7 @@ export default {
     .header-inside {
         .header-logo {
             width: 10rem;
-            height: 111.195px;
+            // height: 111.195px;
         }
         nav {
             padding: 30px;
