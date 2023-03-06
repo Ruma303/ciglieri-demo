@@ -1,7 +1,30 @@
 <template>
-    <footer id="footer-container d-flex fixed-bottom flex-column">
-      <div id="upper-footer"></div>
-      <div id="lower-footer"></div>
+    <footer id="footer-container d-flex">
+        <!-- $ Parte superiore del Footer-->
+      <div class="upper-footer d-flex justify-space-between">
+        <div class="upper-footer-left d-flex flex-column">
+
+            <!--* Parte sinistra -->
+            <h4>Distretto Sociosanitario Roma 6.6</h4>
+            <h5 class="footer-info">Indirizzo: <span></span></h5>
+            <h5 class="footer-info">Telefono: <span></span></h5>
+            <h5 class="footer-info">Mail: <span></span></h5>
+            <h5 class="footer-info">Pec: <span></span></h5>
+        </div>
+            <!--* Parte destra -->
+        <div class="upper-footer-right d-flex flex-column">
+            <h6>Mappa del sito</h6>
+            <h5 class="footer-info">Indirizzo: <span></span></h5>
+            <h5 class="footer-info">Telefono: <span></span></h5>
+            <h5 class="footer-info">Mail: <span></span></h5>
+            <h5 class="footer-info">Pec: <span></span></h5>
+        </div>
+    </div>
+
+        <!-- $ Parte inferiore del Footer-->
+      <div class="lower-footer">
+        <a href="#">Dichiarazione di accessibilità</a>
+      </div>
     </footer>
 </template>
 
@@ -13,17 +36,33 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#upper-footer{
+.upper-footer{
     display: flex;
     justify-content: center;
     width: 100%;
     height: 20rem;
     background-color: white;
-    border-top: .1px solid #5b5b5b
+    border-top: .1px solid #5b5b5b;
+
+    .footer-info {
+        text-transform: uppercase;
+        font-size: 1rem;
+        text-align: left;
+        max-width: 1400px;
+
+        .upper-footer-left,
+        .upper-footer-right {
+            max-width: 700px;
+            min-width: 500px;
+        }
+    }
 }
-#lower-footer{
+.lower-footer{
     background-color: #5b5b5b;
     width: 100%;
     height: 5rem;
+    a {
+        color: lightblue;
+    }
 }
 </style>
