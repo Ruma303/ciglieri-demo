@@ -1,25 +1,31 @@
 <template>
-  <div class="app-container-external">
-    <div class="app-container-internal container-fluid px-0">
+  <div class="app-container container-fluid px-0">
 
+      <!-- $ Header e navbar -->
       <HeaderComponent id="header-component"/>
+
+      <!-- $ Main -->
       <div id="main-view-div">
         <!-- *Questo router-view sará il componente dinamico che mostrerá altre views -->
         <router-view id="main-component"/>
-        <RightSideComponent id="rigthside-container" />
+        <RightSideComponent id="rightside-container" />
       </div>
 
-    </div>
+      <!-- $ Footer -->
+      <Footer id="footer-component"/>
+
   </div>
 </template>
 
 <script>
-import HeaderComponent from './components/header/HeaderComponent.vue';
-import RightSideComponent from '@/components/homepage/RightSideComponent.vue'
+import HeaderComponent from '@/components/header/HeaderComponent.vue';
+import RightSideComponent from '@/components/homepage/RightSideComponent.vue';
+import Footer from '@/components/footer/FooterComponent.vue'
 export default {
     components: {
     HeaderComponent,
     RightSideComponent,
+    Footer,
   }
 }
 
@@ -45,21 +51,20 @@ a {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  //width: 100%;
+  //height: 100%;
 }
-.app-container-external {
+.app-container {
   width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
   position: relative;
 
-  /* #header-component{
-    position:absolute;
-  } */
-
+  //$ Main
   #main-view-div {
     display: flex;
-    //align-items: center;
-    justify-content: space-between;
+    justify-content: start;
     height: 100%;
     width: 100%;
     max-width: 1400px;
@@ -67,23 +72,31 @@ a {
     //gap: 5rem;
     position: relative;
 
-   #main-component {
+    #main-component {
       max-width: 80%;
       width: 100%;
-      height:100;
+      height:100%;
       margin: 0;
       padding-left: 5rem;
       padding-top: 2rem;
       left: 0;
       top: 0;
-   }
-    #rigthside-container {
+    }
+    #rightside-container {
       max-width: 17%;
       position: absolute;
       right: 0;
       top: 0;
     }
   }
+  /*$ Footer */
+  #footer-component {
+    position: relative; //FIXME Forse da cambiare
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
+
 
 </style>

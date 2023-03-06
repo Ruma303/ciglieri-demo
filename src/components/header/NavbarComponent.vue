@@ -4,18 +4,21 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarScroll">
+    <div class="collapse navbar-collapse d-flex align-content-center" id="navbarScroll">
       <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll gap-2" style="--bs-scroll-height: 100px;">
+
         <router-link to="/" class="navbar-brand">Home</router-link>
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-dark px-1" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Il Distretto
           </a>
           <ul class="dropdown-menu">
             <li><router-link class="dropdown-item" to="/comuni">I Comuni</router-link></li>
-            <li><router-link class="dropdown-item" to="/piano-di-zona">Piano di Zona</router-link></li>
+            <li><a class="dropdown-item" href="#">Piano di Zona</a></li>
           </ul>
         </li>
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Servizi
@@ -27,50 +30,25 @@
             <li><a class="dropdown-item" href="#">Assistenza Domiciliare</a></li>
           </ul>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+        <li class="nav-item">
+          <router-link to="/modulistica" class="nav-link text-dark">
             Modulistica
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Link</a></li>
-            <li><a class="dropdown-item" href="#">Altro link</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Altro link</a></li>
-          </ul>
+          </router-link>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Avvisi
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Link</a></li>
-            <li><a class="dropdown-item" href="#">Altro link</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Altro link</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+        <li class="nav-item">
+          <router-link class="nav-link text-dark" to="/albo-pretorio">
             Albo Pretorio
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Link</a></li>
-            <li><a class="dropdown-item" href="#">Altro link</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Altro link</a></li>
-          </ul>
+          </router-link>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+        <li class="nav-item">
+          <router-link class="nav-link text-dark" to="/amministrazione-trasparente">
             <span class="text-collapse">Amministrazione Trasparente</span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Link</a></li>
-            <li><a class="dropdown-item" href="#">Altro link</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Altro link</a></li>
-          </ul>
+          </router-link>
         </li>
+
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -89,4 +67,9 @@ export default {
 /* .text-collapse {
   overflow-wrap: break-word;
 } */
+
+#modulistica-link {
+  font-weight: 500;
+  //font-size: 1rem;
+}
 </style>

@@ -1,23 +1,54 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import MainView from '../views/MainView.vue'
+//$ Importazioni
+import MainView from '@/views/MainView.vue';
+import Comuni from '@/views/ComuniPage.vue';
+import Modulistica from '@/views/ModulisticaPage.vue';
+import Amministrazione from '@/views/AmministrazionePage.vue';
+import AlboPretorio from '@/views/AlboPretorioPage.vue';
+
+
+
 const routes = [
-  { //*HOMEPAGE con le news e gli avvisi
+  {
     path: '/',
     name: 'Home',
     component: MainView
   },
-  //TODO probabilmente dovró cambiare queste rotte e fare /il-distretto/:sottorotte dinamiche es comuni, piano-di-zona... Al momento le faccio statiche
-  { //*I Comuni
+  //TODO probabilmente dovrò cambiare queste rotte e fare /il-distretto/:sotto-rotte dinamiche es comuni, piano-di-zona... Al momento le faccio statiche
+  {
     path: '/comuni',
     name: 'Comuni',
-    component: ()=> import(/*webpackChunkName: "comuni"*/ "@/views/ComuniPage.vue"),
+    component: Comuni,
   },
-  { //*Piano di zona
-    path: '/piano-di-zona',
-   // name: 'Comuni',
-    //component: ()=> import(/*webpackChunkName: "comuni"*/ "@/views/ComuniPage.vue"),
+  {
+    // path: '/piano-di-zona',
+    // name: 'Comuni',
+    // component: ()=> import(/*webpackChunkName: "comuni"*/ "@/views/ComuniPage.vue") //todo da creare,
   },
+  {
+    path: '/modulistica',
+    name: 'Modulistica',
+    component: Modulistica,
+  },
+  {
+    path: '/amministrazione-trasparente',
+    name: 'Amministrazione',
+    component: Amministrazione,
+  },
+  {
+    path: '/albo-pretorio',
+    name: 'AlboPretorio',
+    component: AlboPretorio,
+  },
+  {
+    //TODO Crea la rotta generica che rimanda alla homepage
+  }
 ]
+
+
+
+
+
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
