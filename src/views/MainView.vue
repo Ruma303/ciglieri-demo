@@ -23,18 +23,20 @@ export default {
 <style lang="scss" scoped>
 .main-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     height: 100%;
     width: 100%;
     margin: 0 auto;
     padding: 1rem 0;
     gap: 1rem;
-    position: relative;
+    // position: relative;
 
     .news-container {
         margin: 0;
+        // position: absolute;
         left: 0;
         top: 0;
+
     }
 }
 </style>
