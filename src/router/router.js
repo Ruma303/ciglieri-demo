@@ -40,6 +40,9 @@ const routes = [
     name: 'AlboPretorio',
     component: AlboPretorio,
   },
+  {
+    //TODO Crea la rotta generica che rimanda alla homepage
+  }
 ]
 
 
