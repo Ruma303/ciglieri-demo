@@ -37,11 +37,6 @@
           </router-link>
         </li>
 
-        <li class="nav-item">
-          <router-link class="nav-link text-dark" to="/albo-pretorio">
-            Albo Pretorio
-          </router-link>
-        </li>
 
         <li class="nav-item">
           <router-link class="nav-link text-dark" to="/amministrazione-trasparente">
