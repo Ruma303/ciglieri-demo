@@ -5,7 +5,7 @@ import Comuni from '@/views/ComuniPage.vue';
 import Modulistica from '@/views/ModulisticaPage.vue';
 import Amministrazione from '@/views/AmministrazionePage.vue';
 import AlboPretorio from '@/views/AlboPretorioPage.vue';
-
+import Segretariato from'@/views/SegretariatoPage.vue';
 
 
 const routes = [
@@ -20,10 +20,11 @@ const routes = [
     name: 'Comuni',
     component: Comuni,
   },
+  //! Probabilmente dovrò creare una rotta genitore Servizi con i children delle voci.
   {
-    // path: '/piano-di-zona',
-    // name: 'Comuni',
-    // component: ()=> import(/*webpackChunkName: "comuni"*/ "@/views/ComuniPage.vue") //todo da creare,
+    path: '/segretariato',
+    name: 'Segretariato',
+    component: Segretariato,
   },
   {
     path: '/modulistica',

@@ -24,8 +24,8 @@
             Servizi
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Segretariato Sociale</a></li>
-            <li><a class="dropdown-item" href="#">Servizio Sociale Professionale</a></li>
+            <li><router-link class="dropdown-item" to="/segretariato">Segretariato Sociale</router-link></li>
+            <li><a href="#" class="dropdown-item">Servizio Sociale Professionale</a></li>
             <li><a class="dropdown-item" href="#">Punto Unico di Accesso</a></li>
             <li><a class="dropdown-item" href="#">Assistenza Domiciliare</a></li>
           </ul>
