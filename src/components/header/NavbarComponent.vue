@@ -15,19 +15,63 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Piano di Zona</a></li>
-            <li><router-link class="dropdown-item" to="/comuni">I Comuni</router-link></li>
+            <li><router-link class="dropdown-item" to="/comuni" >I Comuni</router-link></li>
           </ul>
         </li>
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Servizi
-          </a>
+          <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+            Servizi</a>
+
           <ul class="dropdown-menu">
-            <li><router-link class="dropdown-item" to="/segretariato">Segretariato Sociale</router-link></li>
-            <li><a href="#" class="dropdown-item">Servizio Sociale Professionale</a></li>
-            <li><a class="dropdown-item" href="#">Punto Unico di Accesso</a></li>
-            <li><a class="dropdown-item" href="#">Assistenza Domiciliare</a></li>
+
+            <li class="dropend">
+              <a class="dropdown-item dropdown-toggle text-dark px-2" href="#" data-bs-toggle="dropdown">Ricevi aiuto</a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Punto Unico d’Accesso</a></li>
+                <li><a href="#" class="dropdown-item">Segretariato Sociale</a></li>
+                <li><a href="#" class="dropdown-item">Pronto Intervento Sociale</a></li>
+              </ul>
+            </li>
+
+            <li class="dropend">
+              <a class="nav-link dropdown-toggle text-dark px-2" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                Famiglia e minori</a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Assistenza domiciliare socio-educativa</a></li>
+                <li><a href="#" class="dropdown-item">Spazio neutro-incontri protetti</a></li>
+                <li><a href="#" class="dropdown-item">Assistenza educativa e trasporto alunni diversamente abili</a></li>
+                <li><a href="#" class="dropdown-item">Sostegno economico alle famiglie</a></li>
+                <li><a href="#" class="dropdown-item">Centro Diurno “Mater Amabilis”</a></li>
+                <li><a href="#" class="dropdown-item">Contributi per lo Spettro autistico</a></li>
+                <li><a href="#" class="dropdown-item">Centro Antiviolenza</a></li>
+              </ul>
+            </li>
+
+            <li class="dropend">
+              <a class="nav-link dropdown-toggle text-dark px-2" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                Supporto per Anziani e Disabili</a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Assistenza Domiciliare Integrata</a></li>
+                <li><a href="#" class="dropdown-item">Assistenza domiciliare</a></li>
+                <li><a href="#" class="dropdown-item">Centro Anziani</a></li>
+                <li><a href="#" class="dropdown-item">Azioni di supporto per i Caregivers</a></li>
+                <li><a href="#" class="dropdown-item">Vita Indipendente</a></li>
+                <li><a href="#" class="dropdown-item">Dopo di Noi</a></li>
+                <li><a href="#" class="dropdown-item">Centro Diurno Disabili Adulti</a></li>
+                <li><a href="#" class="dropdown-item">Abbattimento barriere architettoniche</a></li>
+                <li><a href="#" class="dropdown-item">Centro Diurno Caffè Alzheimer</a></li>
+              </ul>
+            </li>
+
+            <li class="dropend">
+              <a class="dropdown-item dropdown-toggle text-dark px-2" href="#" data-bs-toggle="dropdown">Inclusione</a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Contributi economici</a></li>
+                <li><a href="#" class="dropdown-item">FAMI IMPACT</a></li>
+              </ul>
+            </li>
+
           </ul>
         </li>
 
