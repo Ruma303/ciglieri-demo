@@ -17,7 +17,9 @@ import SpazioNeutroIncontriProtetti from '@/views/Servizi/Famiglie e minori/Spaz
 //* Supporto per Anziani e Disabili
 import AssistenzaDomiciliareIntegrata from '@/views/Servizi/Supporto per Anziani e Disabili/AssistenzaDomiciliareIntegrata.vue';
 import CentroDiurnoAlzheimer from '@/views/Servizi/Supporto per Anziani e Disabili/CentroDiurnoAlzheimer.vue';
-//import AssistenzaDomiciliareIntegrata from '@/views/Servizi/Supporto per Anziani e Disabili/AssistenzaDomiciliareIntegrata.vue';
+
+//* Inclusione
+import ContributiEconomici from '@/views/Servizi/Inclusione/ContributiEconomici.vue';
 
 
 const routes = [
@@ -73,11 +75,13 @@ const routes = [
     name: 'CentroDiurnoAlzheimer',
     component: CentroDiurnoAlzheimer,
   },
-/*   {
-    path: '/pronto-intervento-sociale',
-    name: 'ProntoInterventoSociale',
-    component: ProntoInterventoSociale,
-  }, */
+
+  //* Inclusione
+  {
+    path: '/contributi-economici',
+    name: 'ContributiEconomici',
+    component: ContributiEconomici,
+  },
 
 
 

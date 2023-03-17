@@ -67,7 +67,7 @@
             <li class="dropend">
               <a class="dropdown-item dropdown-toggle text-dark px-2" href="#" data-bs-toggle="dropdown">Inclusione</a>
               <ul class="dropdown-menu">
-                <li><router-link to="/" class="dropdown-item">Contributi economici</router-link></li>
+                <li><router-link to="/contributi-economici" class="dropdown-item">Contributi economici</router-link></li>
                 <li><router-link to="/" class="dropdown-item">FAMI IMPACT</router-link></li>
               </ul>
             </li>
