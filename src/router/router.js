@@ -4,7 +4,10 @@ import MainView from '@/views/MainView.vue';
 import Comuni from '@/views/ComuniPage.vue';
 import Modulistica from '@/views/ModulisticaPage.vue';
 import Amministrazione from '@/views/AmministrazionePage.vue';
-import Segretariato from'@/views/SegretariatoPage.vue';
+
+//* Ricevi aiuto
+import Segretariato from '@/views/Servizi/Ricevi aiuto/SegretariatoPage.vue';
+import PuntoUnicoAccesso from '@/views/Servizi/Ricevi aiuto/PuntoUnicoAccesso.vue';
 
 
 const routes = [
@@ -24,6 +27,11 @@ const routes = [
     path: '/segretariato',
     name: 'Segretariato',
     component: Segretariato,
+  },
+  {
+    path: '/punto-unico-accesso',
+    name: 'PuntoUnicoAccesso',
+    component: PuntoUnicoAccesso,
   },
   {
     path: '/modulistica',
