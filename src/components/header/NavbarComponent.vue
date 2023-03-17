@@ -29,8 +29,8 @@
               <a class="dropdown-item dropdown-toggle text-dark px-2" href="#" data-bs-toggle="dropdown">Ricevi aiuto</a>
               <ul class="dropdown-menu">
                 <li><router-link to="/punto-unico-accesso" class="dropdown-item">Punto Unico d’Accesso</router-link></li>
-                <li><router-link to="/segretariato" class="dropdown-item">Segretariato Sociale</router-link></li>
-                <li><a href="#" class="dropdown-item">Pronto Intervento Sociale</a></li>
+                <li><router-link to="/segretariato-sociale" class="dropdown-item">Segretariato Sociale</router-link></li>
+                <li><router-link to="/pronto-intervento-sociale" class="dropdown-item">Pronto Intervento Sociale</router-link></li>
               </ul>
             </li>
 

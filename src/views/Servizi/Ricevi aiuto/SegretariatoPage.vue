@@ -15,7 +15,7 @@
 <script>
 //import
 export default {
-    name: 'Segretariato',
+    name: 'SegretariatoSociale',
 }
 </script>
 <style lang="scss" scoped>

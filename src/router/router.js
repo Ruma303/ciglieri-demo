@@ -6,8 +6,9 @@ import Modulistica from '@/views/ModulisticaPage.vue';
 import Amministrazione from '@/views/AmministrazionePage.vue';
 
 //* Ricevi aiuto
-import Segretariato from '@/views/Servizi/Ricevi aiuto/SegretariatoPage.vue';
+import SegretariatoSociale from '@/views/Servizi/Ricevi aiuto/SegretariatoPage.vue';
 import PuntoUnicoAccesso from '@/views/Servizi/Ricevi aiuto/PuntoUnicoAccesso.vue';
+import ProntoInterventoSociale from '@/views/Servizi/Ricevi aiuto/ProntoInterventoSociale.vue';
 
 
 const routes = [
@@ -23,15 +24,21 @@ const routes = [
     component: Comuni,
   },
   //! Probabilmente dovrò creare una rotta genitore Servizi con i children delle voci.
+  //* Ricevi aiuto routes
   {
-    path: '/segretariato',
-    name: 'Segretariato',
-    component: Segretariato,
+    path: '/segretariato-sociale',
+    name: 'SegretariatoSociale',
+    component: SegretariatoSociale,
   },
   {
     path: '/punto-unico-accesso',
     name: 'PuntoUnicoAccesso',
     component: PuntoUnicoAccesso,
+  },
+  {
+    path: '/pronto-intervento-sociale',
+    name: 'ProntoInterventoSociale',
+    component: ProntoInterventoSociale,
   },
   {
     path: '/modulistica',
