@@ -10,6 +10,10 @@ import SegretariatoSociale from '@/views/Servizi/Ricevi aiuto/SegretariatoPage.v
 import PuntoUnicoAccesso from '@/views/Servizi/Ricevi aiuto/PuntoUnicoAccesso.vue';
 import ProntoInterventoSociale from '@/views/Servizi/Ricevi aiuto/ProntoInterventoSociale.vue';
 
+//* Famiglie e minori
+import AssistenzaDomiciliareSocioEducativa from '@/views/Servizi/Famiglie e minori/AssistenzaDomiciliareSocioEducativa.vue';
+import SpazioNeutroIncontriProtetti from '@/views/Servizi/Famiglie e minori/SpazioNeutroIncontriProtetti.vue';
+
 
 const routes = [
   {
@@ -40,6 +44,24 @@ const routes = [
     name: 'ProntoInterventoSociale',
     component: ProntoInterventoSociale,
   },
+
+  //* Famiglie e minori
+  {
+    path: '/assistenza-domiciliare-socio-educativa',
+    name: 'AssistenzaDomiciliareSocioEducativa',
+    component: AssistenzaDomiciliareSocioEducativa,
+  },
+  {
+    path: '/spazio-neutro-incontri-protetti',
+    name: 'SpazioNeutroIncontriProtetti',
+    component: SpazioNeutroIncontriProtetti,
+  },
+
+
+
+
+
+
   {
     path: '/modulistica',
     name: 'Modulistica',

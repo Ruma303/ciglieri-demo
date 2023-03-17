@@ -38,13 +38,13 @@
               <a class="nav-link dropdown-toggle text-dark px-2" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                 Famiglia e minori</a>
               <ul class="dropdown-menu">
-                <li><a href="#" class="dropdown-item">Assistenza domiciliare socio-educativa</a></li>
-                <li><a href="#" class="dropdown-item">Spazio neutro-incontri protetti</a></li>
-                <li><a href="#" class="dropdown-item">Assistenza educativa e trasporto alunni diversamente abili</a></li>
-                <li><a href="#" class="dropdown-item">Sostegno economico alle famiglie</a></li>
-                <li><a href="#" class="dropdown-item">Centro Diurno “Mater Amabilis”</a></li>
-                <li><a href="#" class="dropdown-item">Contributi per lo Spettro autistico</a></li>
-                <li><a href="#" class="dropdown-item">Centro Antiviolenza</a></li>
+                <li><router-link to="/assistenza-domiciliare-socio-educativa" class="dropdown-item">Assistenza domiciliare socio-educativa</router-link></li>
+                <li><router-link to="/spazio-neutro-incontri-protetti" class="dropdown-item">Spazio neutro-incontri protetti</router-link></li>
+                <li><router-link to="/" class="dropdown-item">Assistenza educativa e trasporto alunni diversamente abili</router-link></li>
+                <li><router-link to="/" class="dropdown-item">Sostegno economico alle famiglie</router-link></li>
+                <li><router-link to="/" class="dropdown-item">Centro Diurno “Mater Amabilis”</router-link></li>
+                <li><router-link to="/" class="dropdown-item">Contributi per lo Spettro autistico</router-link></li>
+                <li><router-link to="/" class="dropdown-item">Centro Antiviolenza</router-link></li>
               </ul>
             </li>
 
@@ -52,23 +52,23 @@
               <a class="nav-link dropdown-toggle text-dark px-2" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                 Supporto per Anziani e Disabili</a>
               <ul class="dropdown-menu">
-                <li><a href="#" class="dropdown-item">Assistenza Domiciliare Integrata</a></li>
-                <li><a href="#" class="dropdown-item">Assistenza domiciliare</a></li>
-                <li><a href="#" class="dropdown-item">Centro Anziani</a></li>
-                <li><a href="#" class="dropdown-item">Azioni di supporto per i Caregivers</a></li>
-                <li><a href="#" class="dropdown-item">Vita Indipendente</a></li>
-                <li><a href="#" class="dropdown-item">Dopo di Noi</a></li>
-                <li><a href="#" class="dropdown-item">Centro Diurno Disabili Adulti</a></li>
-                <li><a href="#" class="dropdown-item">Abbattimento barriere architettoniche</a></li>
-                <li><a href="#" class="dropdown-item">Centro Diurno Caffè Alzheimer</a></li>
+                <li><router-link to="/" class="dropdown-item">Assistenza Domiciliare Integrata</router-link></li>
+                <li><router-link to="/" class="dropdown-item">Assistenza domiciliare</router-link></li>
+                <li><router-link to="/" class="dropdown-item">Centro Anziani</router-link></li>
+                <li><router-link to="/" class="dropdown-item">Azioni di supporto per i Caregivers</router-link></li>
+                <li><router-link to="/" class="dropdown-item">Vita Indipendente</router-link></li>
+                <li><router-link to="/" class="dropdown-item">Dopo di Noi</router-link></li>
+                <li><router-link to="/" class="dropdown-item">Centro Diurno Disabili Adulti</router-link></li>
+                <li><router-link to="/" class="dropdown-item">Abbattimento barriere architettoniche</router-link></li>
+                <li><router-link to="/" class="dropdown-item">Centro Diurno Caffè Alzheimer</router-link></li>
               </ul>
             </li>
 
             <li class="dropend">
               <a class="dropdown-item dropdown-toggle text-dark px-2" href="#" data-bs-toggle="dropdown">Inclusione</a>
               <ul class="dropdown-menu">
-                <li><a href="#" class="dropdown-item">Contributi economici</a></li>
-                <li><a href="#" class="dropdown-item">FAMI IMPACT</a></li>
+                <li><router-link to="/" class="dropdown-item">Contributi economici</router-link></li>
+                <li><router-link to="/" class="dropdown-item">FAMI IMPACT</router-link></li>
               </ul>
             </li>
 
