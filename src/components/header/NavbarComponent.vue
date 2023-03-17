@@ -52,7 +52,7 @@
               <a class="nav-link dropdown-toggle text-dark px-2" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                 Supporto per Anziani e Disabili</a>
               <ul class="dropdown-menu">
-                <li><router-link to="/" class="dropdown-item">Assistenza Domiciliare Integrata</router-link></li>
+                <li><router-link to="/assistenza-domiciliare-integrata" class="dropdown-item">Assistenza Domiciliare Integrata</router-link></li>
                 <li><router-link to="/" class="dropdown-item">Assistenza domiciliare</router-link></li>
                 <li><router-link to="/" class="dropdown-item">Centro Anziani</router-link></li>
                 <li><router-link to="/" class="dropdown-item">Azioni di supporto per i Caregivers</router-link></li>
@@ -60,7 +60,7 @@
                 <li><router-link to="/" class="dropdown-item">Dopo di Noi</router-link></li>
                 <li><router-link to="/" class="dropdown-item">Centro Diurno Disabili Adulti</router-link></li>
                 <li><router-link to="/" class="dropdown-item">Abbattimento barriere architettoniche</router-link></li>
-                <li><router-link to="/" class="dropdown-item">Centro Diurno Caffè Alzheimer</router-link></li>
+                <li><router-link to="/centro-diurno-alzheimer" class="dropdown-item">Centro Diurno Caffè Alzheimer</router-link></li>
               </ul>
             </li>
 

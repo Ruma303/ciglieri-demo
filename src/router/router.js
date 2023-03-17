@@ -14,6 +14,11 @@ import ProntoInterventoSociale from '@/views/Servizi/Ricevi aiuto/ProntoInterven
 import AssistenzaDomiciliareSocioEducativa from '@/views/Servizi/Famiglie e minori/AssistenzaDomiciliareSocioEducativa.vue';
 import SpazioNeutroIncontriProtetti from '@/views/Servizi/Famiglie e minori/SpazioNeutroIncontriProtetti.vue';
 
+//* Supporto per Anziani e Disabili
+import AssistenzaDomiciliareIntegrata from '@/views/Servizi/Supporto per Anziani e Disabili/AssistenzaDomiciliareIntegrata.vue';
+import CentroDiurnoAlzheimer from '@/views/Servizi/Supporto per Anziani e Disabili/CentroDiurnoAlzheimer.vue';
+//import AssistenzaDomiciliareIntegrata from '@/views/Servizi/Supporto per Anziani e Disabili/AssistenzaDomiciliareIntegrata.vue';
+
 
 const routes = [
   {
@@ -57,7 +62,22 @@ const routes = [
     component: SpazioNeutroIncontriProtetti,
   },
 
-
+  //* Supporto per Anziani e Disabili
+  {
+    path: '/assistenza-domiciliare-integrata',
+    name: 'AssistenzaDomiciliareIntegrata',
+    component: AssistenzaDomiciliareIntegrata,
+  },
+   {
+    path: '/centro-diurno-alzheimer',
+    name: 'CentroDiurnoAlzheimer',
+    component: CentroDiurnoAlzheimer,
+  },
+/*   {
+    path: '/pronto-intervento-sociale',
+    name: 'ProntoInterventoSociale',
+    component: ProntoInterventoSociale,
+  }, */
 
 
 

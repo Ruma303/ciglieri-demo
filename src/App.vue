@@ -40,6 +40,7 @@ export default {
 }
 ul {
     list-style: none;
+    text-align: left;
 }
 a {
     text-decoration: none;
