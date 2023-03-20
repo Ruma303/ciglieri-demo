@@ -9,11 +9,6 @@
         <li>Orari</li>
         <li>Chiama</li>
         <li>Come raggiungerci</li>
-        <li>Assistenza educativa e trasporto alunni diversamente abili</li>
-        <li>Sostegno economico alle famiglie </li>
-        <li>Centro Diurno “Mater Amabilis”</li>
-        <li>Contributi per lo Spettro autistico</li>
-        <li> Centro Antiviolenza</li>
       </ul>
 
 
