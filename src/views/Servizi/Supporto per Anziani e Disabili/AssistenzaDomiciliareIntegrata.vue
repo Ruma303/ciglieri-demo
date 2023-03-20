@@ -8,14 +8,6 @@
         <li>Orari</li>
         <li>Chiama</li>
         <li>Come raggiungerci</li>
-        <li>Assistenza domiciliare</li>
-        <li>Centro Anziani</li>
-        <li>Azioni di supporto per i Caregivers</li>
-        <li>Vita Indipendente</li>
-        <li>Dopo di Noi</li>
-        <li>Centro Diurno Disabili Adulti</li>
-        <li>Abbattimento barriere architettoniche</li>
-
       </ul>
     </div>
 </template>
