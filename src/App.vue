@@ -1,18 +1,18 @@
 <template>
-  <div class="app-container container-fluid px-0">
+  <div class="container-fluid px-0 h-auto d-flex flex-column justify-content-center">
 
       <!-- $ Header e navbar -->
       <HeaderComponent id="header-component"/>
 
-      <!-- $ Main -->
-      <div id="main-view-div">
-        <!-- *Questo router-view sará il componente dinamico che mostrerá altre views -->
-        <router-view id="main-component"/>
-        <RightSideComponent id="rightside-container" />
+      <!-- $ Main con componenti dinamici -->
+      <div id="main-component">
+        <router-view id="main-router-component"/>
+        <RightSideComponent id="right-component" />
       </div>
 
-      <!-- $ Footer -->
-      <Footer id="footer-component"/>
+      <!-- FIXME Footer deve trovarsi in fondo, attaccato alla pagina, sotto il main-->
+
+      <Footer id="footer-component" class="sticky-bottom"/>
 
   </div>
 </template>
@@ -51,29 +51,33 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  //width: 100%;
-  //height: 100%;
-}
-.app-container {
+  //color: #2c3e50;
   width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
-  position: relative;
 
-  //$ Main
-  #main-view-div {
+  // Header
+  #header-component{
+    top: 0;
+    left: 0;
+    right: 0;
+    max-height: 100%;
+  }
+
+  // Main
+  #main-component {
     display: flex;
     justify-content: start;
-    height: 100%;
+    //height: 100%;
     width: 100%;
     max-width: 1400px;
+    //max-height: 1400px;
     margin: 0 auto;
     //gap: 5rem;
-    position: relative;
+    //top: 479.913px; //FIXME aggiusta
 
-    #main-component {
+    #main-router-component {
       max-width: 80%;
       width: 100%;
       height:100%;
@@ -83,21 +87,18 @@ a {
       left: 0;
       top: 0;
     }
-    #rightside-container {
+
+    #right-component {
       max-width: 17%;
-      position: absolute;
+      height: 100%;
       right: 0;
       top: 0;
     }
   }
-  /*$ Footer */
+
+  // Footer
   #footer-component {
-    position: relative; //FIXME Forse da cambiare
-    bottom: 0;
-    left: 0;
-    right: 0;
+    max-height: 100%;
   }
 }
-
-
 </style>
