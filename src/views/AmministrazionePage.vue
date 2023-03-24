@@ -1,7 +1,16 @@
 <template>
     <div>
       <h1>Amministrazione Trasparente</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, cumque facilis! Optio quo odit commodi? Consequatur quis et alias? Aliquid similique consequuntur aperiam. Illo saepe placeat rerum? Mollitia, dignissimos inventore?</p>
+      <div id="amministrazione-form">
+        <nav class="navbar bg-light">
+          <div class="container-fluid">
+            <form class="d-flex w-100" role="search">
+              <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Cerca</button>
+            </form>
+          </div>
+        </nav>
+      </div>
     </div>
 </template>
 
