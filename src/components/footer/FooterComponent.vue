@@ -4,7 +4,7 @@
       <div class="upper-footer d-flex justify-space-between">
           <!--* Parte sinistra -->
         <div class="upper-footer-left w-25 d-flex flex-column">
-            <h4>Distretto Sociosanitario Roma 6.6</h4>
+            <h5>Distretto Sociosanitario Roma 6.6</h5>
             <h5 class="footer-info">Indirizzo: <span></span></h5>
             <h5 class="footer-info">Telefono: <span></span></h5>
             <h5 class="footer-info">Mail: <span></span></h5>
@@ -39,13 +39,13 @@ export default {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 10rem;
+    height: 7rem;
     background-color: white;
     border-top: .1px solid #5b5b5b;
 
     .footer-info {
         text-transform: uppercase;
-        font-size: 1rem;
+        font-size: .7rem;
         text-align: left;
         max-width: 1400px;
 
@@ -59,7 +59,7 @@ export default {
 .lower-footer{
     background-color: #5b5b5b;
     width: 100%;
-    height: 5rem;
+    height: 2rem;
     a {
         color: lightblue;
     }

@@ -1,8 +1,8 @@
 <template>
-  <div class="container-fluid px-0 h-auto d-flex flex-column justify-content-center">
+  <div class="container-fluid px-0 h-auto d-flex flex-column justify-content-center" id="app-interno">
 
       <!-- $ Header e navbar -->
-      <HeaderComponent id="header-component"/>
+      <HeaderComponent id="header-component" />
 
       <!-- $ Main con componenti dinamici -->
       <div id="main-component">
@@ -57,8 +57,21 @@ a {
   margin: 0;
   padding: 0;
 
+  /* #app-interno {
+    width: 100%;
+    min-height: 100%;
+  } */
+
   // Header
   #header-component{
+    //
+}
+
+.main-area-header {
+    background-color: rgb(234, 234, 234);
+    position: absolute;
+    z-index: 3;
+    top: 0; left: 0; right: 0;
     top: 0;
     left: 0;
     right: 0;

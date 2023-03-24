@@ -38,6 +38,10 @@ export default {
         }
     }
     .header-inside {
+        /* position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 20; */
         .header-logo {
             width: 10rem;
             // height: 111.195px;
