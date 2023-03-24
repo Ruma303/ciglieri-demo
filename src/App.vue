@@ -12,7 +12,7 @@
 
       <!-- FIXME Footer deve trovarsi in fondo, attaccato alla pagina, sotto il main-->
 
-      <Footer id="footer-component" class="sticky-bottom"/>
+      <!--<Footer id="footer-component" class="sticky-bottom"/>-->
 
   </div>
 </template>
