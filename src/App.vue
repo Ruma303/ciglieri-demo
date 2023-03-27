@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid px-0 h-auto d-flex flex-column justify-content-center" id="app-interno">
+  <div class="container-fluid px-0 h-auto d-flex flex-column justify-content-center m-0 w-100 h-100" id="app-interno">
 
       <!-- $ Header e navbar -->
       <HeaderComponent id="header-component" />
@@ -12,7 +12,7 @@
 
       <!-- FIXME Footer deve trovarsi in fondo, attaccato alla pagina, sotto il main-->
 
-      <!--<Footer id="footer-component" class="sticky-bottom"/>-->
+      <Footer id="footer-component" class="sticky-bottom"/>
 
   </div>
 </template>
@@ -51,20 +51,20 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  //color: #2c3e50;
-  width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
 
-  /* #app-interno {
-    width: 100%;
-    min-height: 100%;
-  } */
+  #app-interno {
+    width: 100vh;
+  }
 
   // Header
   #header-component{
-    //
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .main-area-header {
@@ -82,13 +82,11 @@ a {
   #main-component {
     display: flex;
     justify-content: start;
-    //height: 100%;
     width: 100%;
     max-width: 1400px;
     //max-height: 1400px;
     margin: 0 auto;
-    //gap: 5rem;
-    //top: 479.913px; //FIXME aggiusta
+    padding-bottom: 20rem;
 
     #main-router-component {
       max-width: 80%;
@@ -112,6 +110,10 @@ a {
   // Footer
   #footer-component {
     max-height: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }
 </style>

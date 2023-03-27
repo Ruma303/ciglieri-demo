@@ -26,11 +26,11 @@ export default {
 .header-container {
     background-color: #dedede;
     //border-bottom: solid .1px #cccccc;
-    width: 100vw;
+    /* width: 100vw;
     position: relative;
     top: 0;
     left: 0;
-    right: 0;
+    right: 0; */
     .header-social {
         background-color: #42b983;
         a {
