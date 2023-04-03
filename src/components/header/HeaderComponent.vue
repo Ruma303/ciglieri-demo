@@ -5,7 +5,7 @@
         </div>
         <img src="@/assets/img/banner.jpg" alt="" class="header-banner">
         <div class="header-inside container d-flex align-items-center justify-content-between px-0">
-            <img src="@/assets/img/assets/logo.png" alt="" class="header-logo">
+            <img src="@/assets/img/logo.png" alt="" class="header-logo">
             <NavbarComponent />
         </div>
     </header>
